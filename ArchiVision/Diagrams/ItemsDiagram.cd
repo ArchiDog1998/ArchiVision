@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ArchiVision.ArrowCurveDisplayItem">
+    <Position X="2" Y="12" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAEAAAAAAAAAAAABAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Items\ArrowCurveDisplayItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArchiVision.CurveDisplayItem">
+    <Position X="3.5" Y="8.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAhAAAIAACIAAAgAAAAAAAAA=</HashCode>
+      <FileName>Items\CurveDisplayItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArchiVision.DisplayItem">
+    <Position X="3.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAggAAAAAAAAAAAAAAAABAAAAAACAAAAAAAAQAACAI=</HashCode>
+      <FileName>Items\DisplayItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArchiVision.GeometryDisplayItem">
+    <Position X="2" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAICAAAAAAAAAAAAAAACAAACAAAABQAgAA=</HashCode>
+      <FileName>Items\GeometryDisplayItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArchiVision.MergedMeshDisplayItem">
+    <Position X="5.75" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAgEAAA=</HashCode>
+      <FileName>Items\MergedMeshDisplayItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArchiVision.MeshDisplayItem">
+    <Position X="1.5" Y="8.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAACAA=</HashCode>
+      <FileName>Items\MeshDisplayItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArchiVision.MeshOutlineDisplayItem">
+    <Position X="5" Y="12" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\MeshOutlineDisplayItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArchiVision.PointDisplayItem">
+    <Position X="6.25" Y="8.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>ABAIAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\PointDisplayItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="GH_Goo">
+    <Position X="7.248" Y="7.941" Height="0.291" Width="0.794" />
+  </Comment>
+  <Comment CommentText="Datas">
+    <Position X="7.024" Y="11.109" Height="0.291" Width="0.744" />
+  </Comment>
+  <Comment CommentText="Parameters">
+    <Position X="7.515" Y="3.292" Height="0.291" Width="1.046" />
+  </Comment>
+  <Class Name="ArchiVision.CurveDisplayAttribute">
+    <Position X="4" Y="10.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAABAAAAAAAAgAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Items\CurveDisplayAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArchiVision.DisplayItem">
+    <Position X="1" Y="10" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAggAAAAAAAAAAAAAAAABAAAAAACAAAAAAAAQAACAI=</HashCode>
+      <FileName>Items\DisplayItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArchiVision.Parameters.Param_ArchiVision&lt;T&gt;">
+    <Position X="3.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Parameters\Param_ArchiVision.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArchiVision.Param_CurveDisplayAttribute">
+    <Position X="4" Y="2.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Parameters\Param_CurveDisplayAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArchiVision.Param_DisplayItem">
+    <Position X="1" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>gEAABAAABAAAAAAAABAAABAQAAAACAAAAAAAIAEECAA=</HashCode>
+      <FileName>Parameters\Param_DisplayItem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ArchiVision.GH_DisplayItem">
+    <Position X="1" Y="6.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAACAQAAAAAAAAEAAgAAAAAAAAAIBAAAAAAAAAAAAE=</HashCode>
+      <FileName>Types\GH_DisplayItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArchiVision.GH_CurveRenderAttribute">
+    <Position X="4" Y="6.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAACAQAAAAAAAAEAAgAAAAAAAAAIBAAAAAAAAAAAAE=</HashCode>
+      <FileName>Types\GH_CurveRenderAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

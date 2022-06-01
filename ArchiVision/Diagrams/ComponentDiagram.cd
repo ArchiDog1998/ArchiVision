@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ArchiVision.Component_ArchiVision">
+    <Position X="5.5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\Component_ArchiVision.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArchiVision.Component_BaseDisplayItem">
+    <Position X="3.75" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAIABAAAAAAAAABAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\Component_BaseDisplayItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArchiVision.Component_CurveDisplayItem">
+    <Position X="0.5" Y="6.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAABAAAAEAABAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Components\Component_CurveDisplayItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArchiVision.Component_MergedShaderDisplayItem">
+    <Position X="8.25" Y="6.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAABAAAAEAABAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Components\Component_MergedShaderDisplayItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArchiVision.RhinoViewComponent.Component_ShaderDisplayItem">
+    <Position X="5.5" Y="6.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAABAAAAEAABAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Components\Component_ShaderDisplayItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArchiVision.Components.Component_PointDisplayItem">
+    <Position X="3" Y="6.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAABAAAAEAABAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Components\Component_PointDisplayItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArchiVision.Components.Component_CurveDisplayItemAttribute">
+    <Position X="6.5" Y="2.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAIABAAAAAAAAAAAABAAAEEAABIAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Components\Component_CurveDisplayItemAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
