@@ -11,7 +11,7 @@ namespace ArchiVision
     /// <summary>
     /// This class contains all Display Items.
     /// </summary>
-    public abstract class Component_BaseDisplayItem : Component_ArchiVision
+    public abstract class Component_BaseDisplayItem : Component_ArchiVision, IGH_StateAwareObject
     {
         #region Values
         #region Basic Component info
@@ -31,7 +31,7 @@ namespace ArchiVision
         /// Initializes a new instance of the BaseRenderItemComponent class.
         /// </summary>
         public Component_BaseDisplayItem(string name, string nickname, string description)
-          : base(name, nickname, description, Subcategory.UI_RhinoView)
+          : base(name, nickname, description, Subcategory.RhinoView)
         {
         }
 
@@ -49,6 +49,16 @@ namespace ArchiVision
             Param_OGLShader param_OGLShader = new Param_OGLShader();
             //param_OGLShader.SetPersistentData(new GH_Material(Color.White));
             pManager[pManager.AddParameter(param_OGLShader, "Material", "M", "The material override", GH_ParamAccess.item)].Optional = true;
+        }
+
+        public void LoadState(string state)
+        {
+            this.Hidden = bool.Parse(state);
+        }
+
+        public string SaveState()
+        {
+            return this.Hidden.ToString();
         }
     }
 }

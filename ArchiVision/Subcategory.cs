@@ -8,7 +8,7 @@ namespace ArchiVision
 {
     public enum Subcategory
     {
-        UI_Element,
-        UI_RhinoView,
+        Element,
+        RhinoView,
     }
 }

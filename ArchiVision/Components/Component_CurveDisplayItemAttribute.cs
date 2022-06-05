@@ -35,7 +35,7 @@ namespace ArchiVision.Components
         /// </summary>
         public Component_CurveDisplayItemAttribute()
           : base("Curve Display Attribute", "Nickname",
-              "Description", Subcategory.UI_RhinoView)
+              "Description", Subcategory.RhinoView)
         {
         }
 
