@@ -1,0 +1,21 @@
+---
+name: ArchiVision
+version: 0.9.0
+authors:
+- 秋水
+description: >
+  This plugin can help you to make the diagrams easily!
+  
+  
+  You can set point, curve with arrow or mesh to the rhino viewport with ArchiVision. So it is easy to get a beautiful diagram with the command called ViewCaptureToFile when you are modeling.
+  
+  
+  This plugin has all linetype in your Rhino Document and all type of points that Rhino provides. Please enjoy it!
+  
+url: https://www.food4rhino.com/en/app/archivision
+keywords:
+- display
+- qiushui
+- visualization
+icon_url: "https://static.food4rhino.com/s3fs-public/styles/thumbnail/public/users-files/app/windowcomponent24-24256.png"
+
