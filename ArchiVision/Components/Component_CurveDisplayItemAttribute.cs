@@ -49,7 +49,7 @@ namespace ArchiVision.Components
             pManager.AddNumberParameter("Thickness", "t", "Thickness", GH_ParamAccess.item, 2);
             _lineType = (Param_Integer)pManager[pManager.AddIntegerParameter("LineType", "T", "LintType", GH_ParamAccess.item, -1)];
             UpdateNamedValue();
-            pManager.AddBooleanParameter("TopMost", "M", "TopMost", GH_ParamAccess.item, false);
+            pManager.AddIntegerParameter("TopMostLevel", "M", "TopMostLevel", GH_ParamAccess.item, 0);
         }
 
         private void UpdateNamedValue()
@@ -82,8 +82,7 @@ namespace ArchiVision.Components
             Color colour = Color.White;
             double thickness = 2;
             int lineT = 0;
-            bool abso = true;
-            bool topMost = false;
+            int topMost = 0;
 
             DA.GetData(0, ref colour);
             DA.GetData(1, ref thickness);

@@ -36,7 +36,7 @@ namespace ArchiVision.Components
                 integer.AddNamedValue(names[i], (int)indexs.GetValue(i));
             }
 
-            pManager.AddBooleanParameter("TopMost", "M", "TopMost", GH_ParamAccess.item, false);
+            pManager.AddIntegerParameter("TopMostLevel", "M", "TopMostLevel", GH_ParamAccess.item, 0);
         }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace ArchiVision.Components
             Color color = default;
             double radius = default;
             int type = default;
-            bool topMost = false;
+            int topMost = 0;
 
             DA.GetData(0, ref pt);
             DA.GetData(1, ref color);

@@ -64,7 +64,7 @@ namespace ArchiVision.RhinoViewComponent
             pManager.AddParameter(new Param_CurveDisplayAttribute(), "Out Line Attribute", "O", "Out Line Attribute", GH_ParamAccess.item);
             pManager[6].Optional = true;
 
-            pManager.AddBooleanParameter("TopMost", "M", "TopMost", GH_ParamAccess.item, false);
+            pManager.AddIntegerParameter("TopMostLevel", "M", "TopMostLevel", GH_ParamAccess.item, 0);
         }
 
 
@@ -83,7 +83,7 @@ namespace ArchiVision.RhinoViewComponent
                 CurveDisplayAttribute interior = null;
                 CurveDisplayAttribute sharp = null;
                 CurveDisplayAttribute outline = null;
-                bool topmost = false;
+                int topmost = 0;
 
                 double angle = Math.PI / 6;
                 DA.GetData(1, ref mate);

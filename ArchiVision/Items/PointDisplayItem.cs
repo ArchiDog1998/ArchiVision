@@ -22,7 +22,7 @@ namespace ArchiVision
     {
         public PointStyle PtStyle { get; protected set; }
         public float Radius { get; protected set; }
-        public PointDisplayItem(IGH_DocumentObject owner, GH_Point point, Color color, PointStyle style, float radius, bool topMost)
+        public PointDisplayItem(IGH_DocumentObject owner, GH_Point point, Color color, PointStyle style, float radius, int topMost)
             :base(owner, point, topMost)
         {
             PtStyle = style;

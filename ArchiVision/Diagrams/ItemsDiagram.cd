@@ -10,7 +10,7 @@
   <Class Name="ArchiVision.CurveDisplayItem">
     <Position X="3.5" Y="8.25" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAgAAAAAAAAhAAAIAACIAAAgAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAhAAAIAAAIAAAgAAAAAAAAA=</HashCode>
       <FileName>Items\CurveDisplayItem.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -31,7 +31,7 @@
   <Class Name="ArchiVision.MergedMeshDisplayItem">
     <Position X="5.75" Y="4.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAgEAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\MergedMeshDisplayItem.cs</FileName>
     </TypeIdentifier>
   </Class>

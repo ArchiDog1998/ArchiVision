@@ -15,8 +15,9 @@ namespace ArchiVision
         /// <summary>
         /// The Params used for display.
         /// </summary>
-        public List<Param_DisplayItem> ItemParams { get; } = new List<Param_DisplayItem>();
-        //public List<RhinoViewPropertyComponent> PropertyComponents { get; } = new List<RhinoViewPropertyComponent>();
+        public List<Param_DisplayItem> ItemParams { private set; get; } = new List<Param_DisplayItem>();
+
+
 
         /// <summary>
         /// Rectangle for drawing the top most display items.
@@ -34,13 +35,14 @@ namespace ArchiVision
 
                 foreach (var item in ItemParams)
                 {
-                    if (item.Attributes.GetTopLevel.DocObject is IGH_PreviewObject itemOwner)
+                    if (item.Attributes?.GetTopLevel.DocObject is IGH_PreviewObject itemOwner)
                     {
-                        if (itemOwner.Hidden || item.Hidden) continue;
+                        if (itemOwner.Hidden || item.Hidden || item.Locked) continue;
                         result.AddRange(item.VolatileData.AllData(true).Select(goo => ((GH_DisplayItem)goo).Value));
                     }
                 }
 
+                result = result.OrderBy(i => i.TopMostLevel).ToList();
 
                 return result;
             }

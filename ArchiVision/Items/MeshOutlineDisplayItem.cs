@@ -20,7 +20,7 @@ namespace ArchiVision
 
 
         public MeshOutlineDisplayItem(IGH_DocumentObject owner, GH_Mesh mesh, CurveDisplayAttribute att)
-            : base(owner, null, att.Colour, att.Thickness, att.LineType, true)
+            : base(owner, null, att.Colour, att.Thickness, att.LineType, att.TopMost)
         {
             Geometry = mesh;
             LineType = att.LineType;

@@ -48,7 +48,7 @@ namespace ArchiVision
             }
         }
 
-        public GeometryDisplayItem(IGH_DocumentObject owner, IGH_PreviewData geometry, bool topMost)
+        public GeometryDisplayItem(IGH_DocumentObject owner, IGH_PreviewData geometry, int topMost)
             :base(owner, topMost)
         {
             Geometry = geometry;

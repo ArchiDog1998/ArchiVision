@@ -39,7 +39,8 @@ namespace ArchiVision
         //    }
         //}
 
-        public MeshDisplayItem(IGH_DocumentObject owner, GH_Mesh geometry, GH_Material material, CurveDisplayAttribute nakedEdgeAtt, CurveDisplayAttribute interiorEdgeAtt, CurveDisplayAttribute outLineAtt, CurveDisplayAttribute sharpEdgeAtt, double angle, bool topmost)
+        public MeshDisplayItem(IGH_DocumentObject owner, GH_Mesh geometry, GH_Material material, CurveDisplayAttribute nakedEdgeAtt, 
+            CurveDisplayAttribute interiorEdgeAtt, CurveDisplayAttribute outLineAtt, CurveDisplayAttribute sharpEdgeAtt, double angle, int topmost)
             :base(owner, geometry, topmost)
         {
 			Material = material?.Value;

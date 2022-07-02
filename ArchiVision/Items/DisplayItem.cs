@@ -23,7 +23,7 @@ namespace ArchiVision
     public abstract class DisplayItem
     {
         protected List<DisplayItem> SubRenderItem { get; } = new List<DisplayItem>();
-        public bool IsTopMost { get; }
+        public int TopMostLevel { get; }
         private IGH_DocumentObject _owner;
         public bool Selected => _owner.Attributes.Selected;
         public virtual BoundingBox ClippingBox 
@@ -36,9 +36,9 @@ namespace ArchiVision
             }
         }
 
-        public DisplayItem(IGH_DocumentObject owner, bool topMost)
+        public DisplayItem(IGH_DocumentObject owner, int topMost)
         {
-            IsTopMost = topMost;
+            TopMostLevel = topMost;
             _owner = owner;
         }
 
@@ -58,7 +58,7 @@ namespace ArchiVision
         {
             if (_owner.OnPingDocument() != Grasshopper.Instances.ActiveCanvas.Document) return;
             SubRenderItem.ForEach((sub) => sub.DrawViewportWires(Viewport, Display, selected));
-            if (IsTopMost) return;
+            if (TopMostLevel > 0) return;
             DrawViewportWires(Viewport, Display, default(Rectangle3d), double.NaN);
         }
 
@@ -67,7 +67,7 @@ namespace ArchiVision
             if (_owner.OnPingDocument() != Grasshopper.Instances.ActiveCanvas.Document) return;
 
             SubRenderItem.ForEach((sub) => sub.DrawViewportMeshes(Viewport, Display, selected));
-            if (IsTopMost) return;
+            if (TopMostLevel > 0) return;
             DrawViewportMeshes(Viewport, Display, default(Rectangle3d), double.NaN);
         }
 
@@ -76,7 +76,7 @@ namespace ArchiVision
             if (_owner.OnPingDocument() != Grasshopper.Instances.ActiveCanvas.Document) return;
 
             SubRenderItem.ForEach((sub) => sub.DrawViewportWires(e, drawRect, unitPerPx));
-            if (!IsTopMost) return;
+            if (TopMostLevel <= 0) return;
             DrawViewportWires(e.Viewport, e.Display, drawRect, unitPerPx);
         }
 
@@ -85,7 +85,7 @@ namespace ArchiVision
             if (_owner.OnPingDocument() != Grasshopper.Instances.ActiveCanvas.Document) return;
 
             SubRenderItem.ForEach((sub) => sub.DrawViewportMeshes(e, drawRect, unitPerPx));
-            if (!IsTopMost) return;
+            if (TopMostLevel <= 0) return;
             DrawViewportMeshes(e.Viewport, e.Display, drawRect, unitPerPx);
         }
     }

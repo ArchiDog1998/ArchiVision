@@ -91,14 +91,8 @@ namespace ArchiVision
         public Param_DisplayItem(GH_ParamAccess access)
             : base("Render Item", "Ri", "Render Item", access)
         {
-
-        }
-
-        public override void PostProcessData()
-        {
-            if (!ArchiVisionInfo.Conduit.ItemParams.Contains(this))
+            //if (!ArchiVisionInfo.Conduit.ItemParams.Contains(this))
                 ArchiVisionInfo.Conduit.ItemParams.Add(this);
-            base.PostProcessData();
         }
 
         public void DrawViewportWires(IGH_PreviewArgs args)

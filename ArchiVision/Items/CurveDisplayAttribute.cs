@@ -14,17 +14,17 @@ namespace ArchiVision
         public float Thickness { get; set; } 
         public Linetype LineType { get; set; } 
 
-        public bool TopMost { get; set; }
+        public int TopMost { get; set; }
 
         public CurveDisplayAttribute()
         {
             this.Colour = Color.White;
             this.Thickness = 2;
             this.LineType = Rhino.RhinoDoc.ActiveDoc.Linetypes.FindIndex(-1);
-            this.TopMost = false;
+            this.TopMost = 0;
         }
 
-        public CurveDisplayAttribute(Color color, float thickness, Linetype linetype, bool topMost)
+        public CurveDisplayAttribute(Color color, float thickness, Linetype linetype, int topMost)
         {
             this.Colour = color;
             this.Thickness = thickness;

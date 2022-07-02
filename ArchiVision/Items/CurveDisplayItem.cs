@@ -19,33 +19,36 @@ namespace ArchiVision
 
         public List<Point3d> Points { get; } = new List<Point3d>();
 
-        public override BoundingBox ClippingBox
-        {
-            get
-            {
-                BoundingBox box = base.ClippingBox;
-                foreach (var item in PatternCurve)
-                {
-                    box.Union(item.GetBoundingBox(true));
-                }
-                foreach (var item in Points)
-                {
-                    box.Union(item);
-                }
-                return box;
-            }
-        }
+        protected Linetype Linetype { get; }
+
+        //public override BoundingBox ClippingBox
+        //{
+        //    get
+        //    {
+        //        BoundingBox box = base.ClippingBox;
+        //        foreach (var item in PatternCurve)
+        //        {
+        //            box.Union(item.GetBoundingBox(true));
+        //        }
+        //        foreach (var item in Points)
+        //        {
+        //            box.Union(item);
+        //        }
+        //        return box;
+        //    }
+        //}
 
         public CurveDisplayItem(IGH_DocumentObject owner, GH_Curve curve, CurveDisplayAttribute att)
             : this(owner, curve, att.Colour, att.Thickness, att.LineType, att.TopMost)
         {
         }
 
-        public CurveDisplayItem(IGH_DocumentObject owner, GH_Curve curve, Color color, float thickness, Linetype linetype, bool topMost)
+        public CurveDisplayItem(IGH_DocumentObject owner, GH_Curve curve, Color color, float thickness, Linetype linetype, int topMost)
             : base(owner, curve, topMost)
         {
             this.Colour = color;
             this.Size = thickness;
+            this.Linetype = linetype;
             PatternCurve.Clear();
             Points.Clear();
 

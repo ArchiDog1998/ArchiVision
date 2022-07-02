@@ -6,6 +6,7 @@
 */
 
 using Grasshopper.Kernel;
+using Grasshopper.Kernel.Parameters;
 using Grasshopper.Kernel.Types;
 using Rhino.DocObjects;
 using Rhino.Geometry;
@@ -50,7 +51,8 @@ namespace ArchiVision
         /// </summary>
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager)
         {
-            pManager.AddCurveParameter("Curve", "C", "Curve", GH_ParamAccess.item);
+            var curve = (Param_Curve) pManager[pManager.AddCurveParameter("Curve", "C", "Curve", GH_ParamAccess.item)];
+            curve.Hidden = true;
             pManager.AddParameter(new Param_CurveDisplayAttribute());
             pManager[1].Optional = true;
 
@@ -58,7 +60,6 @@ namespace ArchiVision
 
             pManager.AddNumberParameter("Start Arrow", "S", "Start Arrow", GH_ParamAccess.item, -1);
             pManager.AddNumberParameter("End Arrow", "E", "End Arrow", GH_ParamAccess.item, -1);
-            pManager.AddNumberParameter("Arrow Mult", "M", "Arrow Mult, bigger than 1!", GH_ParamAccess.item, 10);
         }
 
         /// <summary>
@@ -79,11 +80,10 @@ namespace ArchiVision
 
             DA.GetData(3, ref start);
             DA.GetData(4, ref end);
-            DA.GetData(5, ref mult);
 
             mult = Math.Max(mult, 1);
 
-            DA.SetData(0, new ArrowCurveDisplayItem(this, curve, att, start ,end, mult));
+            DA.SetData(0, new ArrowCurveDisplayItem(this, curve, att, start ,end));
         }
         #endregion
     }
